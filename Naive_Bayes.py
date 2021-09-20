@@ -16,6 +16,7 @@ def clean(fileaddress):
     Summary_null = data[pd.isnull(data['Summary'])]#Summary列为空值的数据
     data=data.dropna(axis=0,subset=['Summary'])#去除Summary列为空值的行
     return data
+# data=clean('F:\\Reviews.csv')
 
 # 停用词下载
 # # import nltk
