@@ -9,7 +9,6 @@ import nltk
 #前半部分为处理数据及保存，后半部分朴素贝叶斯实现
 
 # 数据清洗 数据读取并处理,data为重复值、缺失值处理后的文件
-# file=pd.read_csv('F:\\Reviews.csv')#读取数据
 def clean(fileaddress):
     file=pd.read_csv(fileaddress)#读取数据
     data=file.drop_duplicates(subset=['ProductId','UserId','Text'],keep='first',inplace=False)#去除同一用户对同一商品的相同评价
@@ -17,8 +16,8 @@ def clean(fileaddress):
     Summary_null = data[pd.isnull(data['Summary'])]#Summary列为空值的数据
     data=data.dropna(axis=0,subset=['Summary'])#去除Summary列为空值的行
     return data
-# data=clean('F:\\Reviews.csv')
 
+# 停用词下载
 # # import nltk
 # # nltk.download()
 # # nltk.download("punkt")
