@@ -105,3 +105,5 @@ def tt_set(allset):
 
 [NLTK最详细功能介绍 - 农夫三拳有點疼 - 博客园 (cnblogs.com)](https://www.cnblogs.com/chen8023miss/p/11458571.html)
 
+周志华.机器学习[M].北京:清华大学出版社,2016.
+
